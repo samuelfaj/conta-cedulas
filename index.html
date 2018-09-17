@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="frontend/index.css">
+
+        <title>Samuelfaj - Conta Cédulas</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="col-md-6 mx-auto pb-3">
+                        <div class="jumbotron text-center">
+                            <h1 class="h3 mb-3 font-weight-normal">Digite o Valor</h1>
+                            <small>O sistema informará quais e quantas notas dar ao cliente</small>
+                            <hr>
+                            <div class="form-group">
+                                <input type="text" id="value" class="form-control form-control-lg text-center" placeholder="0,00" required="" autofocus="">
+                            </div>
+                            <div class="form-group mb-0">
+                                <button class="btn btn-secondary btn-lg btn-block">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-12 text-center" id="content-div" style="display: none">
+                        <h1 class="h4 pb-3 font-weight-normal">Você Deve Entregar Ao Cliente:</h1>
+                        <div class="row pt-3" id="result-div"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+        <script src="frontend/plugins/jquery.mask/jquery.mask.js"></script>
+        <script src="frontend/index.js"></script>
+    </body>
+</html>
